@@ -21,5 +21,7 @@
   记得修改mysql、redis配置
   python manage runserver
   # -P参数win10必须加上
+  要打开2个celery服务
   celery -A test_project.celery worker --loglevel=info -P eventlet
+
   celery -A test_project.celery beat --loglevel=info
